@@ -1,10 +1,10 @@
 <script>
-import AppNav from './AppNav.vue';
+import Nav from './Nav.vue';
 
 export default {
-    name: "AppHeaderBottom",
+    name: "HeaderBottom",
     components: {
-        AppNav
+        Nav
     },
     props: {
         menu: Array
@@ -22,7 +22,7 @@ export default {
                     <h2>GEN</h2>
                 </div>
                 <div class="list">
-                    <AppNav :menu="menu" />
+                    <Nav :menu="menu" />
                     <i class="fa-regular fa-user"></i>
                     <button>GET IN TOUCH</button>
                 </div>

@@ -1,12 +1,12 @@
 <script>
-import AppHeaderTop from './AppHeaderTop.vue';
-import AppHeaderBottom from './AppHeaderBottom.vue';
+import HeaderTop from './HeaderTop.vue';
+import HeaderBottom from './HeaderBottom.vue';
 
 export default {
     name: "AppHeader",
     components: {
-        AppHeaderTop,
-        AppHeaderBottom,
+        HeaderTop,
+        HeaderBottom,
     },
     props: {
         menu: Array
@@ -15,8 +15,8 @@ export default {
 </script>
 
 <template>
-    <AppHeaderTop />
-    <AppHeaderBottom :menu="menu" />
+    <HeaderTop />
+    <HeaderBottom :menu="menu" />
 </template>
 
 <style scoped lang="scss">

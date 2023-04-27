@@ -1,7 +1,7 @@
 <script>
 
 export default {
-    name: "AppHeadertop"
+    name: "Headertop"
 }
 </script>
 

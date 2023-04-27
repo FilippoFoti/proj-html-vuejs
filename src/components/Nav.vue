@@ -1,10 +1,10 @@
 <script>
-import AppItemNav from './AppItemNav.vue';
+import HeaderNavItem from './HeaderNavItem.vue';
 
 export default {
-    name: "AppNav",
+    name: "Nav",
     components: {
-        AppItemNav
+        HeaderNavItem
     },
     props: {
         menu: Array
@@ -15,7 +15,7 @@ export default {
 <template>
     <ul>
         <li v-for="(elem, index) in menu" :key="index" :class="elem.current ? 'active' : ''">
-            <AppItemNav :title="elem.title" />
+            <HeaderNavItem :title="elem.title" />
         </li>
     </ul>
 </template>

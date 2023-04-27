@@ -1,9 +1,9 @@
 <script>
 export default {
-    name: "AppItemNav",
+    name: "ItemNav",
     props: {
         title: "",
-        path: "",
+        // path: "",
     },
 }
 </script>

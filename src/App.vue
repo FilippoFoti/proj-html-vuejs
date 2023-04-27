@@ -1,11 +1,11 @@
 <script>
-import AppHeader from "./components/AppHeader.vue";
-// import AppMain from "./components/AppMain.vue";
+import Header from "./components/Header.vue";
+import Main from "./components/Main.vue";
 
 export default {
   components: {
-    AppHeader,
-    // AppMain
+    Header,
+    Main
   },
   data() {
     return {
@@ -35,6 +35,23 @@ export default {
           url: "#",
           current: false,
         },
+      ],
+      arrayOne: [
+        {
+          icon: "fa-solid fa-user-group",
+          title: "Human Capital",
+          text: "Humanizing business: Harness the power of technology to improve the way people work."
+        },
+        {
+          icon: "fa-solid fa-chart-pie",
+          title: "Core Business",
+          text: "It takes innovative approaches to transform, modernize, and run existing platforms."
+        },
+        {
+          icon: "fa-solid fa-coins",
+          title: "Performance",
+          text: "Archieving maximum impact and value from investments in finance and supply chain."
+        }
       ]
     }
   }
@@ -42,8 +59,8 @@ export default {
 </script>
 
 <template>
-  <AppHeader :menu="menu" />
-  <!-- <AppMain /> -->
+  <Header :menu="menu" />
+  <Main :arrayOne="arrayOne"/>
 </template>
 
 <style lang="scss">
