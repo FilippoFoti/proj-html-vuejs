@@ -18,8 +18,7 @@ export default {
         <div class="bottom">
             <div class="menu">
                 <div class="logo">
-                    <h2 class="green">NEX</h2>
-                    <h2>GEN</h2>
+                    <h2><span>NEX</span> GEN</h2>
                 </div>
                 <div class="list">
                     <Nav :menu="menu" />
@@ -68,7 +67,7 @@ export default {
                     margin-top: 8px;
                 }
 
-                .green {
+                span {
                     color: rgba(0, 165, 165, 1);
                     background-color: rgba(0, 165, 165, 0.2);
                     border-top-left-radius: 60px;

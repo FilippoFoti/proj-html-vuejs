@@ -10,7 +10,7 @@ export default {
         <div class="container">
             <div class="left">
                 <h3>ABOUT THE NETWORK</h3>
-                <h2><span>The </span> Company</h2>
+                <h2><span>The</span> Company</h2>
                 <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Cras iaculis diam varius diam ultricies Iacinia.
                 </p>
                 <div class="row">
@@ -71,7 +71,7 @@ main {
                 span {
                     color: rgba(5, 130, 131, 1);
                     background-color: rgba(218, 236, 237, 1);
-                    padding-left: 10px;
+                    padding: 0 10px;
                     border-radius: 3px;
                 }
             }
