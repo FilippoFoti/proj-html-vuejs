@@ -1,15 +1,18 @@
 <script>
 import SectionOne from './SectionOne.vue';
+import SectionThree from './SectionThree.vue';
 import SectionTwo from './SectionTwo.vue';
 
 export default {
     name: "Main",
     components: {
     SectionOne,
-    SectionTwo
+    SectionTwo,
+    SectionThree
 },
     props: {
-        arrayOne: Array
+        arrayOne: Array,
+        arrayTwo: Array
     }
 }
 </script>
@@ -17,6 +20,7 @@ export default {
 <template>
     <SectionOne :arrayOne="arrayOne"/>
     <SectionTwo />
+    <SectionThree :arrayTwo="arrayTwo"/>
 </template>
 
 <style scoped lang="scss">

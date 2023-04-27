@@ -1,13 +1,17 @@
 <script>
 import HeaderNavItem from './HeaderNavItem.vue';
+import SectionNavItem from './SectionNavItem.vue';
+
 
 export default {
     name: "Nav",
     components: {
-        HeaderNavItem
+        HeaderNavItem,
+        SectionNavItem,
     },
     props: {
-        menu: Array
+        menu: Array,
+        arrayTwo: Array
     }
 }
 </script>
@@ -17,6 +21,9 @@ export default {
         <li v-for="(elem, index) in menu" :key="index" :class="elem.current ? 'active' : ''">
             <HeaderNavItem :title="elem.title" />
         </li>
+        <li class="black" v-for="(elem, index) in arrayTwo" :key="index" :class="elem.current ? 'active' : ''">
+            <SectionNavItem :title="elem.title" />
+        </li>
     </ul>
 </template>
 
@@ -25,13 +32,28 @@ export default {
 @use "../style/partials/variables" as *;
 
 ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     list-style-type: none;
+    gap: 20px;
 
     li {
         color: white;
 
         &.active {
             color: rgba(0, 165, 165, 1);
+        }
+    }
+
+    .black {
+        color: #e4eae6;
+
+        &.active {
+            background-color: rgba(15, 33, 40, 1);
+            padding: 5px 10px;
+            border-radius: 3px;
+            color: #e4eae6;
         }
     }
 }

@@ -52,6 +52,36 @@ export default {
           title: "Performance",
           text: "Archieving maximum impact and value from investments in finance and supply chain."
         }
+      ],
+      arrayTwo: [
+        {
+          title: "ALL",
+          current: true,
+        },
+        {
+          title: "INSTITUTIONAL",
+          current: false,
+        },
+        {
+          title: "SOCIAL",
+          current: false,
+        },
+        {
+          title: "EVENTS",
+          current: false,
+        },
+        {
+          title: "INNOVATION",
+          current: false,
+        },
+        {
+          title: "ENVIRONMENT",
+          current: false,
+        },
+        {
+          title: "TECHNOLOGY",
+          current: false,
+        }
       ]
     }
   }
@@ -60,7 +90,7 @@ export default {
 
 <template>
   <Header :menu="menu" />
-  <Main :arrayOne="arrayOne"/>
+  <Main :arrayOne="arrayOne" :arrayTwo="arrayTwo" />
 </template>
 
 <style lang="scss">

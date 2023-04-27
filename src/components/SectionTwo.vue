@@ -123,7 +123,6 @@ main {
             background-image: url(../assets/img/about-5.jpg);
             background-position: center;
             background-size: cover;
-
         }
     }
 

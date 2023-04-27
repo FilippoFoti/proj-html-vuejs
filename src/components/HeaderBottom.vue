@@ -85,12 +85,6 @@ export default {
                 gap: 25px;
                 color: white;
 
-                ul {
-                    display: flex;
-                    gap: 20px;
-                    list-style-type: none;
-                }
-
                 button {
                     padding: 10px 20px;
                     border-radius: 5px;
