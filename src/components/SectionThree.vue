@@ -108,7 +108,6 @@ main {
                     transform: translate(-50%);
                     font-size: 1.2rem;
                     width: 90%;
-
                 }
             }
         }

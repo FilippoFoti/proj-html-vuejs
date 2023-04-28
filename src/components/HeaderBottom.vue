@@ -63,6 +63,12 @@ export default {
                 color: white;
                 letter-spacing: 5px;
 
+                &:hover {
+                    transform: rotateY(360deg);
+                    transition: 1.5s;
+
+                }
+
                 h2 {
                     margin-top: 8px;
                 }
@@ -83,6 +89,16 @@ export default {
                 align-items: center;
                 gap: 25px;
                 color: white;
+
+                i {
+                    cursor: pointer;
+
+                    &:hover {
+                        color: rgba(0, 165, 165, 1);
+                        transform: scale(1.5);
+                        transition: 0.3s;
+                    }
+                }
 
                 button {
                     padding: 10px 20px;
@@ -121,8 +137,8 @@ export default {
                 background-color: rgba(5, 130, 131, 0.4);
                 border-radius: 3px;
                 position: absolute;
-                top: 347px;
-                left: 308px;
+                top: 47.5%;
+                left: 20%;
             }
 
             p {

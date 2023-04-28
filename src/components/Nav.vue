@@ -44,6 +44,10 @@ ul {
         &.active {
             color: rgba(0, 165, 165, 1);
         }
+
+        &:hover {
+            color: rgba(0, 165, 165, 1);
+        }
     }
 
     .black {
@@ -54,6 +58,10 @@ ul {
             padding: 5px 10px;
             border-radius: 3px;
             color: #e4eae6;
+        }
+
+        &:hover {
+            color: rgba(0, 165, 165, 1);
         }
     }
 }

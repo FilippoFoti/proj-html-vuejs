@@ -1,11 +1,13 @@
 <script>
 import Header from "./components/Header.vue";
 import Main from "./components/Main.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   components: {
     Header,
-    Main
+    Main,
+    Footer
   },
   data() {
     return {
@@ -111,6 +113,7 @@ export default {
 <template>
   <Header :menu="menu" />
   <Main :arrayOne="arrayOne" :arrayTwo="arrayTwo" :arrayThree="arrayThree" />
+  <Footer />
 </template>
 
 <style lang="scss">
