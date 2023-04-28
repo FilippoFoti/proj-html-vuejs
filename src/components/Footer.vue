@@ -55,6 +55,16 @@ export default {
             </div>
         </div>
     </footer>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="left">
+                <p>Enjoy the low price. We are tracking any intention of piracy.</p>
+            </div>
+            <div class="right">
+                <p>© 2020 NEXGEN is Proudly Powered by <span class="green">Codings</span>.</p>
+            </div>
+        </div>
+    </div>
 </template>
 
 <style scoped lang="scss">
@@ -216,6 +226,31 @@ footer {
                 }
             }
         }
+    }
+}
+
+.footer-bottom {
+    background-color: rgba(13, 13, 17, 1);
+    height: 60px;
+
+    .container {
+        height: 100%;
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .left,
+        .right {
+            color: #e4eae6;
+            font-size: 0.75rem;
+
+            span {
+                color: rgba(5, 130, 131, 1);
+            }
+        }
+        
     }
 }
 </style>
