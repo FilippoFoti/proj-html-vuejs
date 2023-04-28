@@ -82,6 +82,26 @@ export default {
           title: "TECHNOLOGY",
           current: false,
         }
+      ],
+      arrayThree: [
+        {
+          img: "logo-1.png",
+          text: "Praesent volutpat justo sit amet elementum malesuada. Praesent sagittis augue justo, in accumsan orci phoncus at pellentsque.",
+          lorem: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          icon: "fa-solid fa-quote-right"
+        },
+        {
+          img: "logo-2.png",
+          text: "Praesent volutpat justo sit amet elementum malesuada. Praesent sagittis augue justo, in accumsan orci phoncus at pellentsque.",
+          lorem: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          icon: "fa-solid fa-quote-right"
+        },
+        {
+          img: "logo-3.png",
+          text: "Praesent volutpat justo sit amet elementum malesuada. Praesent sagittis augue justo, in accumsan orci phoncus at pellentsque.",
+          lorem: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          icon: "fa-solid fa-quote-right"
+        }
       ]
     }
   }
@@ -90,7 +110,7 @@ export default {
 
 <template>
   <Header :menu="menu" />
-  <Main :arrayOne="arrayOne" :arrayTwo="arrayTwo" />
+  <Main :arrayOne="arrayOne" :arrayTwo="arrayTwo" :arrayThree="arrayThree" />
 </template>
 
 <style lang="scss">

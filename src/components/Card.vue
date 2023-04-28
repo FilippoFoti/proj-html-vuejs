@@ -1,13 +1,16 @@
 <script>
 import ContentCardOne from './ContentCardOne.vue';
+import ContentCardTwo from './ContentCardTwo.vue';
 
 export default {
     name: "Card",
     components: {
-        ContentCardOne
-    },
+    ContentCardOne,
+    ContentCardTwo
+},
     props: {
-        arrayOne: Array
+        arrayOne: Array,
+        arrayThree: Array
     }
 }
 </script>
@@ -15,9 +18,10 @@ export default {
 <template>
     <div class="row">
         <div class="col" v-for="(elem, index) in arrayOne" :key="index">
-            <!-- <ContentCardOne :title="elem.title" :text="elem.text" :icon="elem.icon"/> -->
             <ContentCardOne :elem="elem"/>
-
+        </div>
+        <div class="col" v-for="(elem, index) in arrayThree" :key="index">
+            <ContentCardTwo :elem="elem"/>
         </div>
     </div>
 </template>
@@ -27,7 +31,6 @@ export default {
 @use "../style/partials/variables" as *;
 
 .row {
-    padding: 100px 0;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;

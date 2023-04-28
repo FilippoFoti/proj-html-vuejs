@@ -7,7 +7,7 @@ export default {
 <template>
     <main>
         <div class="container">
-            <h3>HOW IT WORKSIN PRACTICE</h3>
+            <h3>HOW IT WORKS IN PRACTICE</h3>
             <h2><span>Process</span> Management</h2>
             <p>We work whit innovative methodologies to ensure that the entire reformatting process is done from start to
                 finischas planned.</p>

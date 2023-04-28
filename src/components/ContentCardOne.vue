@@ -24,7 +24,7 @@ export default {
 
 .card {
     color: black;
-
+    
     i {
         color: rgba(5, 130, 131, 1);
         background-color: rgba(218, 236, 237, 1);

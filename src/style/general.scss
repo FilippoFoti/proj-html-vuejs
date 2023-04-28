@@ -16,3 +16,8 @@ body {
 img {
     max-width: 100%;
 }
+
+button:hover {
+    transform: scale(1.3);
+    transition: 0.7s;
+}

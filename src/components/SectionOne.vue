@@ -33,6 +33,7 @@ main {
     .container {
         width: 60%;
         margin: 0 auto;
+        padding: 100px 0;
     }
     
     .pattern {
